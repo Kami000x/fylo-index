@@ -47,7 +47,7 @@ html,body{
 header{
     max-width: auto; 
     display: flex;
-    padding: 2rem;
+    padding: 13px;
     
     justify-content: space-between;
     position: sticky;
@@ -79,12 +79,12 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    margin-inline: 2rem;
+    margin-inline: 3rem;
 }
 nav ul li a{
     text-decoration: none;
     color: #fffff8;
-    font-size: 1.4rem;
+    font-size: 14px;
 
 }
 
@@ -104,20 +104,20 @@ main, .icons{
 }
 
 main h2{
-    font-size: 3rem;
+    font-size: 16px;
     padding: 2px 5px;
     margin-bottom: 5px;
 }
 
 main p{
-    font-size: 2rem;
+    font-size: 13px;
     margin-bottom: 3vh;
 
 }
 
 main button{
     width: 220px;
-    font-size: 2.1rem;
+    font-size: 16px;
     padding: 1rem 3.3rem;
     color: #fffff8;
     background:linear-gradient(to right, rgba(81, 199, 212,0.6),  rgba(81, 125, 196, 1));
@@ -145,10 +145,10 @@ main button{
 }
 
 .row h3{
-    font-size: 3rem;
+    font-size: 16px;
 }
 .row p, .comment p{
-    font-size: 1.8rem;
+    font-size: 14px;
 }
 .row article{
     flex-basis: 0 0 40%;
@@ -179,12 +179,13 @@ main button{
 }
 
 .pic-right h2{
-    font-size: 4.2rem;
+    font-size: 22px;
     font-weight: 800;
     
 }
 .pic-right p{
-    font-size: 1.8rem;
+    font-size: 13px;
+    
 }
 
 .pic-right a{
@@ -214,17 +215,24 @@ main button{
 }
 
 .profile{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+
+    line-height: 2px;
+    white-space: nowrap;
+    margin-left: 0;
+    grid-template-columns: 82px auto;
+     
 }
 .profile .a{
-    height: 100px;
-    width: 150px;
-    
+    height: 80px;
+    width: 80px;
+
+ 
     border-radius: 50%;
+    margin-inline: 0;
 
 }
+.profile .b{ margin-inline: 0;}
 
 .profile img{
     max-height: 100px;
@@ -233,9 +241,9 @@ main button{
     object-fit: contain;
 }
 
-.profile h5{ font-size: 1.6rem;}
+.profile h5{ font-size: 14px;}
 .one p{
-    font-size: 1.5rem;
+    font-size: 12px;
 }
 
 
@@ -272,12 +280,12 @@ main button{
 
 .form-container input[type=email]{
 
-    width: 60%;
+    width: 65%;
     height: 50px;
     border-radius: 30px;
     border: none;
     padding: 2px 10px;
-    font-size: 2rem;
+    font-size: 13px;
     font-weight: 400;
     margin-bottom: 1.5vh;
 
@@ -288,6 +296,7 @@ main button{
 
 
     width: 250px;
+    text-align: center;
     font-size: 1.8rem;
     padding: 1rem 2.5rem;
     color: #fffff8;
@@ -304,7 +313,7 @@ main button{
 ::placeholder{
     text-align: center;
     color: gray;
-    font-size: 2rem;
+    font-size: 13px;
 }
 
 
@@ -358,7 +367,7 @@ footer{
 }
 
 .sline div{
-    font-size: 2rem;
+    font-size: 13px;
     
     padding-left: 0;
     max-width: 15%;
@@ -375,7 +384,7 @@ footer{
 .sline div ul, .sline ol{list-style: none; padding: 0;} 
 
 .sline p, .sline li{
-    font-size: 1.8rem;
+    font-size: 14px;
 }
 .sline p{
     margin-bottom: 6px;
@@ -383,16 +392,25 @@ footer{
 .sline li{
     margin-bottom: 12px;
 }
+
 .sline .soc{
     text-align: right;
-    font-size: 3rem;
+    font-size: 18px;
+}
+
+.social ul{
+    display: grid;
+    max-width: 200px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    grid-gap: 1px;
+    margin-inline: 0 ;
 }
 
 
 .social li{
     display: inline;
-    margin: 0px 5px ;
-}
+    }
 
 
 /***********************************************
@@ -401,7 +419,7 @@ footer{
 
 
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 790px) { 
 
     header{
         max-width: 100vw;
