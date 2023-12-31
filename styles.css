@@ -79,7 +79,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    margin-inline: 3rem;
+    margin-inline: 1.8rem;
 }
 nav ul li a{
     text-decoration: none;
